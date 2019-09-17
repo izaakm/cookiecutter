@@ -35,8 +35,6 @@ To start a new project, like *this* one:
     cookiecutter https://github.com/izaakm/cookiecutter
 
 
-[![asciicast](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02.png)](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02)
-
 
 The resulting directory structure
 --------------------------------------------------------------------------------
