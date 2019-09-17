@@ -1,13 +1,17 @@
-# Cookiecutter Data Science
-
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
-
-
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+Cookiecutter (forked from [Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science))
+================================================================================
 
 
-### Requirements to use the cookiecutter template:
------------
+*A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.*
+
+
+[Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+
+
+Requirements to use the cookiecutter template:
+--------------------------------------------------------------------------------
+
+
  - Python 2.7 or 3.5
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
@@ -23,31 +27,38 @@ $ conda install cookiecutter
 ```
 
 
-### To start a new project, run:
-------------
+To start a new project, like *this* one:
+--------------------------------------------------------------------------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
+
+
+    cookiecutter https://github.com/izaakm/cookiecutter
 
 
 [![asciicast](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02.png)](https://asciinema.org/a/9bgl5qh17wlop4xyxu9n9wr02)
 
 
-### The resulting directory structure
-------------
+The resulting directory structure
+--------------------------------------------------------------------------------
+
+
 
 The directory structure of your new project looks like this: 
 
 ```
 ├── LICENSE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
+│   ├── immutable
+│   │   └── DATE       <- Individual directories containing both 'raw' data and data from third-parties.
+│   │                     IE, data from third-parties should be treated as immutable.
 │   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+│   └── processed      <- The final, canonical data sets for modeling.
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│   └── methods        <- Both experimental and computational methods in plain english (no code).
+│
+├── project            <- Project description, timeline, contributors, etc.
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -63,10 +74,13 @@ The directory structure of your new project looks like this:
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
+├── setup.py           <- Make this project pip installable with `pip install -e`.
+|                         Run `pip install -e .` in the root of the project to install `src` to the current environment.
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
 │   ├── data           <- Scripts to download or generate data
+|   |   ├── load.py
 │   │   └── make_dataset.py
 │   │
 │   ├── features       <- Scripts to turn raw data into features for modeling
@@ -83,16 +97,24 @@ The directory structure of your new project looks like this:
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```
 
+<!-- 
 ## Contributing
 
 We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
+-->
 
-### Installing development requirements
-------------
+Installing development requirements
+--------------------------------------------------------------------------------
+
+
 
     pip install -r requirements.txt
 
-### Running the tests
-------------
+Running the tests
+--------------------------------------------------------------------------------
+
+
 
     py.test tests
+
+<!-- END -->
