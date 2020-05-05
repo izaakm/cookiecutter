@@ -1,0 +1,22 @@
+name: {{cookiecutter.repo_name}}
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - biopython
+  - bioservices
+  - jupyter
+  - jupyterlab
+  - numpy
+  - openpyxl
+  - pandas
+  - python
+  - r
+  - requests
+  - ruamel.yaml
+  - scipy
+  - seaborn
+  - statsmodels
+  - xlrd
+
