@@ -52,6 +52,11 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
 
---------
+Acknowledgements
+----------------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Project templated derived from the cookiecutter data science project
+[cookiecutter data science project
+template](https://drivendata.github.io/cookiecutter-data-science/).
+
+<!-- END -->
