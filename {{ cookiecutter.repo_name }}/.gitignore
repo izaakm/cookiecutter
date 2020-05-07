@@ -23,6 +23,11 @@ latest
 purgatory
 results
 
+# Data Files
+*.csv
+*.tsv
+*.pkl
+
 # Jupyter notebook checkpoint files
 .ipynb_checkpoints
 
