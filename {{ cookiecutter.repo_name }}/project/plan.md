@@ -29,7 +29,7 @@ Realistic
 
 *State what results can realistically be achieved, given available resources.*
 
-
+Currently, this actually seems to be similar to 'measurable'; ie, what is realistic is what CAN be done as opposed to what CANNOT be done.
 
 Time related 
 ------------
