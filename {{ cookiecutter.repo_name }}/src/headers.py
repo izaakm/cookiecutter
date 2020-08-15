@@ -13,11 +13,15 @@ from glob import glob
 
 from statsmodels.sandbox.stats.multicomp import multipletests
 
-PROJECTDIR = '~/projects/{{cookiecutter.repo_name}}'
-assert os.path.exists(PROJECTDIR), 'PROJECT_DIR does not exist: {}'.format(PROJECTDIR)
+
+PROJECTDIR = os.path.realpath(os.path.expanduser('~/projects/{{cookiecutter.repo_name}}'))
+assert os.path.exists(PROJECTDIR), 'PROJECTDIR does not exist: {}'.format(PROJECTDIR)
 
 DATADIR = os.path.join(PROJECTDIR, 'data')
 assert os.path.exists(DATADIR), 'DATADIR does not exist: {}'.format(DATADIR)
+
+# CACHE = os.path.join(PROJECTDIR, '.cache')
+
 
 def dirname_basename_ext(path):
     dirname, basename = os.path.split(path)
