@@ -2,16 +2,9 @@
 # install.packages("BiocManager")
 # BiocManager::install("edgeR")
 
-load_or_install_packages = function() {
+load_or_install_packages = function(list_of_packages) {
 
-    list.of.packages <- c(
-                          "edgeR",
-                          "limma",
-                          "modules",
-                          "optparse",
-                            )
-
-    new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+    new.packages <- list_of_packages[!(list_of_packages %in% installed.packages()[,"Package"])]
     if(length(new.packages)) {
         if (!requireNamespace("BiocManager", quietly = TRUE)) {
             install.packages("BiocManager", repos='http://cran.us.r-project.org')
@@ -24,11 +17,15 @@ load_or_install_packages = function() {
         # https://bioconductor.org/install/
         BiocManager::install(new.packages)
     }
-    # lapply(list.of.packages, require, character.only = TRUE)
-    lapply(list.of.packages, require, character.only = TRUE)
+    # lapply(list_of_packages, require, character.only = TRUE)
+    lapply(list_of_packages, require, character.only = TRUE)
 
 }
 
-load_or_install_packages()
+l = c(
+      "optparse"
+     )
+
+load_or_install_packages(l)
 
 # END.
