@@ -16,6 +16,7 @@
 *.png
 *.svg
 *.tiff
+.exclude
 /bin
 /data
 /purgatory
