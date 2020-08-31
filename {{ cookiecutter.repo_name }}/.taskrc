@@ -1,4 +1,4 @@
-include ~/dotfiles/taskwarrior/taskrc
+include ~/.taskrc
 
 # default.project=PROJECTNAME
 # context.CONTEXTNAME=project:PROJECTNAME
