@@ -4,6 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
+  - bash_kernel
   - biopython
   - bioservices
   - jupyter
@@ -13,11 +14,9 @@ dependencies:
   - openpyxl
   - pandas
   - python
-  - r
   - requests
   - ruamel.yaml
   - scipy
   - seaborn
   - statsmodels
   - xlrd
-
