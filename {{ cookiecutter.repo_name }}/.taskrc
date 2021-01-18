@@ -4,3 +4,6 @@ include ~/.taskrc
 # context.CONTEXTNAME=project:PROJECTNAME
 # context=CONTEXTNAME
 
+default.project={{cookiecutter.repo_name}}
+context.{{cookiecutter.repo_name}}=project:{{cookiecutter.repo_name}}
+context={{cookiecutter.repo_name}}
