@@ -17,6 +17,7 @@ dependencies:
   - requests
   - ruamel.yaml
   - scipy
+  - scikit-learn
   - seaborn
   - statsmodels
   - xlrd
