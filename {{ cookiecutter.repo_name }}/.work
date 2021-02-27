@@ -1,0 +1,7 @@
+proj_dir=$HOME/projects/{{cookiecutter.repo_name}}/
+proj_name="$(basename $proj_dir)"
+
+tmux new-window -c "$proj_dir" \; \
+    rename-window "$proj_name" \; \
+    send-keys "source .env" \; \
+    split-window -h -c "$proj_dir"
