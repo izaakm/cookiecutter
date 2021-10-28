@@ -20,10 +20,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="{{ cookiecutter.project_name }}",
+    name="{{ cookiecutter.package_name }}",
     version="0.0.1",
     author='{{ cookiecutter.author_name }}',
-    author_email="{{ cookiecutter.author_email }}",
+    author_email='{{ cookiecutter.author_email }}',
     description='{{ cookiecutter.description }}',
     long_description=long_description,
     long_description_content_type="text/markdown",
