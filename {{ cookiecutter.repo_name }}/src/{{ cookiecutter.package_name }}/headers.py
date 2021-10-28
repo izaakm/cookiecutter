@@ -16,6 +16,6 @@ assert os.path.exists(PROJECTDIR), 'PROJECTDIR does not exist: {}'.format(PROJEC
 DATADIR = os.path.join(PROJECTDIR, 'data')
 assert os.path.exists(DATADIR), 'DATADIR does not exist: {}'.format(DATADIR)
 
-# CACHE = os.path.join(PROJECTDIR, '.cache')
+# CACHE = os.path.join(PROJECTDIR, '_cache')
 
 # END
