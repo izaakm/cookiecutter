@@ -4,11 +4,8 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - bash_kernel
   - biopython
   - bioservices
-  - jupyter
-  - jupyterlab
   - matplotlib
   - numpy
   - openpyxl
