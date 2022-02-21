@@ -1,18 +1,12 @@
-# from setuptools import find_packages, setup
-#
-# setup(
-#     name='src',
-#     packages=find_packages(),
-#     version='0.1.0',
-#     author='{{ cookiecutter.author_name }}',
-#     license='{% if cookiecutter.open_source_license == 'MIT' %}MIT{% elif cookiecutter.open_source_license == 'BSD-3-Clause' %}BSD-3{% endif %}',
-# )
+#!/usr/bin/env python3
 
-# The below is copied from:
-# https://packaging.python.org/tutorials/packaging-projects/
-# I used the variables from above to fill in the template below, but in some
-# cases where I didn't know the correct variable (or if it's set in
-# cookiecutter), I filled in what I thought made sense (eg, '.github_url').
+'''
+The below is copied from:
+https://packaging.python.org/tutorials/packaging-projects/
+I used the variables from above to fill in the template below, but in some
+cases where I didn't know the correct variable (or if it's set in
+cookiecutter), I filled in what I thought made sense (eg, '.github_url').
+'''
 
 import setuptools
 
@@ -40,3 +34,5 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
 )
+
+# END.
