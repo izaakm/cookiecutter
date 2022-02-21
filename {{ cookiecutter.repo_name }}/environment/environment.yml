@@ -6,15 +6,18 @@ channels:
 dependencies:
   - biopython
   - bioservices
+  - ipykernel
   - matplotlib
+  - networkx
   - numpy
   - openpyxl
   - pandas
+  - pip
   - python
   - requests
   - ruamel.yaml
-  - scipy
   - scikit-learn
+  - scipy
   - seaborn
   - statsmodels
   - xlrd
