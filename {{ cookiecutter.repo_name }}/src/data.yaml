@@ -1,0 +1,21 @@
+---
+# *** USAGE ***  {{{
+# Example record(s):
+# ************************************************************************
+# - &lastname_year
+#   citation_title    : 'Title of paper'
+#   citation_link     : 'URL of paper'
+#   doi               : 'doi or url'
+#   organism          : 'str or list'
+#   readme            : 'str' (path to readme file for these records)
+# ************************************************************************
+# - <<          : *lastname_year
+#   name        : str
+#   description : str
+#   organism    : str
+#   filepath    : str  # Data will be loaded from this path.
+#   pandas      :
+#     sep       : "\t"  # Use "\t" with double quotes, not single quotes, for pandas.
+# ************************************************************************
+# }}}
+...
