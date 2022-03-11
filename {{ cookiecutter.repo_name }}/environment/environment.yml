@@ -8,6 +8,7 @@ dependencies:
   - bioservices
   - ipykernel
   - jinja2
+  - mamba
   - matplotlib
   - networkx
   - numpy
