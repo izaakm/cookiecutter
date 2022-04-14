@@ -1,10 +1,14 @@
 import os
-import {{cookiecutter.package_name}}
+# import {{cookiecutter.package_name}}
 
 # This assumes that the package has been installed, eg: `pip install -e .`.
 # print({{cookiecutter.package_name}}.__file__)  # /abspath/to/{{cookiecutter.repo_name}}/src/{{cookiecutter.package_name}}/__init__.py
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname({{cookiecutter.package_name}}.__file__)))
+# PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname({{cookiecutter.package_name}}.__file__)))
+def get_project_root():
+    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+
+PROJECT_ROOT = get_project_root()
 assert os.path.exists(PROJECT_ROOT), 'PROJECT_ROOT does not exist: {}'.format(PROJECT_ROOT)
 
 DATADIR = os.path.join(PROJECT_ROOT, 'data')
