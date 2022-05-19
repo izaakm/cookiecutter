@@ -1,5 +1,7 @@
-# TASKRC for {{cookiecutter.repo_name}}
-include ~/.dotfiles/extra/taskwarrior/taskrc
-context.{{cookiecutter.repo_name}}.read=project:{{cookiecutter.repo_name}}
-context.{{cookiecutter.repo_name}}.write=project:{{cookiecutter.repo_name}}
-context={{cookiecutter.repo_name}}
+# TASKRC for "{{cookiecutter.project_name}}"
+include $XDG_CONFIG_HOME/task/taskrc
+
+context.{{cookiecutter.taskwarrior_tag}}.read=+{{cookiecutter.taskwarrior_tag}}
+context.{{cookiecutter.taskwarrior_tag}}.write=+{{cookiecutter.taskwarrior_tag}} project:{{cookiecutter.work_or_personal}}
+
+context={{cookiecutter.taskwarrior_tag}}
