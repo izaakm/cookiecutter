@@ -21,20 +21,19 @@ Project Organization
     ├── notebooks       <- Jupyter notebooks.
     ├── reference       <- Data dictionaries, manuals, and all other explanatory materials.
     ├── reports         <- Generated analysis as HTML, PDF, LaTeX, etc.
-    ├── environment     <- Contains conda environment.yml, also R install script.
+    ├── environment     <- Contains conda environment.yml
     ├── setup.py        <- Install project: `pip install -e .`
     └── src             <- Source code for use in this project.
-        └── __init__.py <- Makes src a Python module
 
 
 Acknowledgements
 ----------------
 
-Derived from the [cookiecutter data science][] project template.
+- [Cookiecutter Data Science][0]
 
 
 <!-- LINKS -->
 
-[cookiecutter data science]: https://drivendata.github.io/cookiecutter-data-science/
+[0]: https://drivendata.github.io/cookiecutter-data-science/
 
 <!-- END -->
