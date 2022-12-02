@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 '''
 The below is copied from:
 https://packaging.python.org/tutorials/packaging-projects/
