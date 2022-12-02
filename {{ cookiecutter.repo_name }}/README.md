@@ -1,4 +1,6 @@
-{{cookiecutter.project_name}}
+% {{cookiecutter.project_name}}
+
+Description
 ==============================
 
 {{cookiecutter.description}}
@@ -11,7 +13,7 @@
 
 
 Project Organization
---------------------
+====================
 
     ├── LICENSE
     ├── README.md       <- The top-level README for developers using this project.
@@ -26,8 +28,14 @@ Project Organization
     └── src             <- Source code for use in this project.
 
 
+Roadmap
+=======
+
+[TODO]
+
+
 Acknowledgements
-----------------
+================
 
 - [Cookiecutter Data Science][0]
 
