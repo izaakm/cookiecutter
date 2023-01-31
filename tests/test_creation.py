@@ -6,7 +6,7 @@ from conftest import system_check
 
 def no_curlies(filepath):
     """ Utility to make sure no curly braces appear in a file.
-        That is, was jinja able to render everthing?
+        That is, was Jinja able to render everything?
     """
     with open(filepath, 'r') as f:
         data = f.read()
@@ -34,7 +34,7 @@ class TestCookieSetup(object):
 
     def test_author(self):
         setup_ = self.path / 'setup.py'
-        args = ['python', setup_, '--author']
+        args = ['python', str(setup_), '--author']
         p = check_output(args).decode('ascii').strip()
         if pytest.param.get('author_name'):
             assert p == 'DrivenData'
@@ -51,7 +51,7 @@ class TestCookieSetup(object):
 
     def test_setup(self):
         setup_ = self.path / 'setup.py'
-        args = ['python', setup_, '--version']
+        args = ['python', str(setup_), '--version']
         p = check_output(args).decode('ascii').strip()
         assert p == '0.1.0'
 
@@ -62,7 +62,7 @@ class TestCookieSetup(object):
 
     def test_license_type(self):
         setup_ = self.path / 'setup.py'
-        args = ['python', setup_, '--license']
+        args = ['python', str(setup_), '--license']
         p = check_output(args).decode('ascii').strip()
         if pytest.param.get('open_source_license'):
             assert p == 'BSD-3'
