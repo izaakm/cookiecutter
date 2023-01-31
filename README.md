@@ -38,6 +38,8 @@ $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
+Initialize a new project:
+
 ```sh
 $ cookiecutter https://github.com/izaakm/cookiecutter
 ```
