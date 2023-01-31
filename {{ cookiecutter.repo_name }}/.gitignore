@@ -1,63 +1,52 @@
 ###############################################################################
-# Things I want ignore
+# Git ignore file
 ###############################################################################
-# Ignore dot files.
 .*
-# But do not ignore .gitkeep.
+_*
+!.gitignore
 !.gitkeep
 
 # Directories
-/bin
-/data
-/purgatory
-/reference
+bin
 cache
+data
 latest
 purgatory
 results
 
-# Misc files
+# Files
 *.bak
+*.bam
+*.csv
 *.html
-*.tmp
-
-# Image files.
 *.jpeg
 *.jpg
 *.pdf
+*.pkl
 *.png
+*.sam
 *.svg
 *.tiff
-
-# Data Files
-*.bam
-*.csv
-*.pkl
-*.sam
+*.tmp
 *.tsv
 
-# Jupyter notebook checkpoint files
+# Tmp files
+*.swp
 .ipynb_checkpoints
-
-# Microsoft (eg, Excel, Word)
-~$*.xls*
 ~$*.doc*
 ~$*.ppt*
-
-# Vim files
-*.swp
-
-# R crap
-*.rds
-*.Rdata
-*.RData
-
+~$*.xls*
 
 # Batch output
 slurm*.o*
+slurm*.e*
+
+# R crap
+*.RData
+*.Rdata
+*.rds
 
 ###############################################################################
-# Commonly ignored files, from GitHub (and others):
 # https://gist.githubusercontent.com/octocat/9257657/raw/3f9569e65df83a7b328b39a091f0ce9c6efc6429/.gitignore
 ###############################################################################
 # Compiled source #
