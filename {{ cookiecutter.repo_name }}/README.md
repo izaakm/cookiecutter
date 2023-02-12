@@ -1,5 +1,8 @@
 % {{cookiecutter.project_name}}
 
+<!-- [About READMEs][1] -->
+<!-- [Readable READMEs][2] -->
+
 Description
 ==============================
 
@@ -38,5 +41,7 @@ Acknowledgements
 <!-- LINKS -->
 
 [0]: https://drivendata.github.io/cookiecutter-data-science/
+[1]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes "About READMEs - GitHub Docs"
+[2]: https://github.com/18F/open-source-guide/blob/18f-pages/pages/making-readmes-readable.md "open-source-guide/making-readmes-readable.md at 18f-pages"
 
 <!-- END -->
