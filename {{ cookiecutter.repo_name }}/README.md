@@ -31,6 +31,16 @@ Timeline
 
 - [TODO] ...
 
+Citing
+======
+
+See `CITATION.cff`. For details about the `cff` format, see the following:
+
+- https://citation-file-format.github.io/
+- https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
+- https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
+- https://citation-file-format.github.io/cff-initializer-javascript/#/
+
 
 Acknowledgements
 ================
