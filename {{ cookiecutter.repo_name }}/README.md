@@ -1,8 +1,5 @@
 % {{cookiecutter.project_name}}
 
-<!-- [About READMEs][1] -->
-<!-- [Readable READMEs][2] -->
-
 Description
 ==============================
 
@@ -11,19 +8,22 @@ Description
 Project Organization
 ====================
 
-    ├── LICENSE
-    ├── README.md         <- The top-level README for developers using this project.
-    ├── data              <- Ignored from git by default.
-    │   ├── anthropogenic <- Data from third party sources.
-    │   ├── outputs       <- Outputs of analyses.
-    │   └── raw           <- The original, immutable data dump.
-    ├── docs              <- A default Sphinx project; see sphinx-doc.org for details
-    ├── models            <- Trained and serialized models, model predictions, or model summaries
-    ├── reference         <- Data dictionaries, manuals, and all other explanatory materials.
-    ├── reports           <- Generated analysis as HTML, PDF, LaTeX, etc.
-    ├── environment.yaml  <- Dependencies for your project's conda environment.
-    ├── setup.py          <- Install project: `pip install -e .`
-    └── src               <- Source code for use in this project.
+    ├── AUTHORS             <= List of authors of this project.
+    ├── CHANGELOG.md        <= List of changes to the project.
+    ├── LICENSE             <= License file.
+    ├── Makefile            <= Makefile.
+    ├── README.md           <= README
+    ├── data                <= Data directory (ignored by default).
+    │   ├── anthropogenic
+    │   ├── derived
+    │   └── raw
+    ├── environment.yml     <= Conda environment
+    ├── methods             <= Write-ups of methods for use in manuscript.
+    ├── notebooks           <= Jupyter notebooks, R Markdown, etc.
+    ├── pyproject.toml      <= Install this project with `pip install -e .`
+    ├── reference.bib       <= Cite this project.
+    ├── results             <= Final figures, tables, etc. for use in manuscript.
+    └── src                 <= Code.
 
 
 Timeline
