@@ -4,15 +4,14 @@
 .*
 _*
 !.gitignore
-!.gitkeep
 
 # Directories
-bin
-cache
-data
-latest
-purgatory
-results
+/bin
+/cache
+/data
+/latest
+/purgatory
+/results
 
 # Files
 *.bak
