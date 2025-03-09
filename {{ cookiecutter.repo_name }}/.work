@@ -3,14 +3,6 @@
 # Activate conda env and set up environment from this file. Keep .env simple so
 # that those variables can be captured with python dotenv package.
 
-# Auto-tmux.
-# proj_dir=$HOME/projects/{{cookiecutter.repo_name}}/
-# proj_name="$(basename $proj_dir)"
-# tmux new-window -c "$proj_dir" \; \
-#     rename-window "$proj_name" \; \
-#     send-keys "source .env" \; \
-#     split-window -h -c "$proj_dir"
-
 LOCAL_ROOT="$(git rev-parse --show-toplevel)"
 
 # Create the .exclude symlink; if the symlink is included in the repo,
@@ -19,17 +11,6 @@ LOCAL_ROOT="$(git rev-parse --show-toplevel)"
 
 # Conda env set up with cookiecutter.
 conda activate {{cookiecutter.repo_name}}
-
-# # Alternatively, consider using this to activate the conda env 'smartly'.
-# # https://ericmjl.github.io/blog/2018/12/25/conda-hacks-for-data-science-efficiency/
-# env_file="${LOCAL_ROOT}/environment/environment.yml"
-# if [ -f $env_file ]; then
-#     # echo "environment.yml file found"
-#     ENV=$(head -n 1 $env_file | cut -f2 -d ' ')
-# else
-#     ENV=$(basename $LOCAL_ROOT)
-# fi
-# conda activate $ENV
 
 source "${LOCAL_ROOT}/.env"
 
