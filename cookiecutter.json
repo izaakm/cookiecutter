@@ -2,7 +2,7 @@
     "work_or_personal": ["work", "personal"],
     "project_name": "Name of project (human readable)",
     "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "repo_name": "{{ cookiecutter.package_name.lower().replace(' ', '-') }}",
     "description": "A short description of the project.",
     "github_username": "USERNAME",
     "github_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}",
