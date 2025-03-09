@@ -3,15 +3,13 @@
 ###############################################################################
 .*
 _*
+
+# Exceptions
 !.gitignore
 
 # Directories
-/bin
-/cache
 /data
-/latest
-/purgatory
-/results
+/tmp
 
 # Files
 *.bak
